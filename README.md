@@ -1,4 +1,4 @@
-# Semantic versioning without any track files.
+# Semantic versioning without any track files
 
 **This action uses git tag for controlling the version. This action will not change/add/remove any file in your repository.**
 
@@ -10,7 +10,7 @@
 
 ```yml
 - name: Run semantic versioning
-  uses: PacificPromise/semantic-versioning-action@main
+  uses: PoliceTeam/semantic-versioning-action@main
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   with:
@@ -36,7 +36,7 @@
 - Create a sh file with below content `run_sample.sh`.
 
 ```sh
-source /dev/stdin <<<"$(curl -s https://raw.githubusercontent.com/PacificPromise/semantic-versioning-action/main/index.sh)" && get_stage_prompt
+source /dev/stdin <<<"$(curl -s https://raw.githubusercontent.com/PoliceTeam/semantic-versioning-action/main/index.sh)" && get_stage_prompt
 
 ```
 
@@ -61,32 +61,12 @@ Enumerating objects: 1, done.
 Counting objects: 100% (1/1), done.
 Writing objects: 100% (1/1), 171 bytes | 171.00 KiB/s, done.
 Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
-To github.com:tuanngocptn/semantic-versioning-action.git
+To github.com:phamtien1709/semantic-versioning-action.git
  * [new tag]         v5.0.4-dev+1 -> v5.0.4-dev+1
 ```
 
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## Contributors
-
-Thanks go to these wonderful people:
-
-<!-- readme: collaborators,contributors -start -->
-<table>
-	<tbody>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/tuanngocptn">
-                    <img src="https://avatars.githubusercontent.com/u/22292704?v=4" width="100;" alt="tuanngocptn"/>
-                    <br />
-                    <sub><b>Nick - Ngoc Pham</b></sub>
-                </a>
-            </td>
-		</tr>
-	<tbody>
-</table>
-<!-- readme: collaborators,contributors -end -->
 
 ### Thanks for using Semantic Versioning Action
